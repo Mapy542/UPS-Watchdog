@@ -8,7 +8,7 @@
  ## Use
 The program is intended to be used as a systemd service that is always running in the background. It will ping against a lan device that is ideally always active but not UPS protected.\
 If the lan ping to a designated device, like the router, fails, the program waits for a small amount of time, and then checks again.\
-If the lan ping fails 5 pings over at least a minute and a half, then the program sends a shutdown command.\
+If the lan ping fails 5 pings over at least a minute and a half, then the program sends a shutdown command.
 
 The program is based around a proportion of time of the UPS max runtime. If the UPS has a small or large runtime, the program will scale to check as least often as possible while still having time to safely shutdown.
 
